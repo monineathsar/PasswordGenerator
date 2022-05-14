@@ -26,6 +26,7 @@ function writePassword() {
     passwordText.value = "";
   }
 }
+
 // Generates passwords based on selected prompts
 function generatePassword(){
   var password = "";
@@ -35,10 +36,11 @@ function generatePassword(){
   }
   return password;
 }
+
 // Series of prompts for password criteria once user first clicks on "Generate Password" btn
 function selectCriteriaPrompts(){
     passwordCriteria = [];
-    charLength = parseInt(prompt("How many charecters do you need for your password? (ex: 8 - 128"));
+    charLength = parseInt(prompt("How many charecters do you need for your password? (ex: 8 - 128)"));
 
     //First "if statement" checks to make sure user insert correct type
     if (isNaN(charLength) || charLength < 8 || charLength > 128) {
